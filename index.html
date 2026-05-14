@@ -4,30 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moodshoot - Login</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="login-container">
+
         <h1>Moodshoot</h1>
-        <p>A camêra que sente o momento.</p>
+        <p>A câmera que sente o momento.</p>
 
         <div class="form-group">
             <label>E-mail:</label>
-            <input type="text" id="email" placeholder="seu@email.com" />
+
+            <input
+                type="text"
+                id="email"
+                placeholder="seu@email.com"
+            />
+
             <span class="erro" id="erroEmail"></span>
         </div>
 
-        <div class="form group">
+        <div class="form-group">
             <label>Senha:</label>
-            <input type="password" id="senha" placeholder="sua senha" />
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Sua senha"
+            />
+
             <span class="erro" id="erroSenha"></span>
         </div>
 
-        <button onclick="fazerlogin()">Entrar</button>
+        <button onclick="fazerLogin()">Entrar</button>
 
-        <p class="dica">Acesso demo: <strong> demo@moodshot.com </strong> / <strong> 123456 </strong></p>
+        <p class="dica">
+            Acesso demo:
+            <strong>demo@moodshot.com</strong> /
+            <strong>123456</strong>
+        </p>
+
     </div>
 
     <script src="js/login.js"></script>
+
 </body>
 </html>
