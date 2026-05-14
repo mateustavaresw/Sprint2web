@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodShot - Início</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>📸 MoodShot</h1>
+    <div>
+      <span id="nomeUsuario"></span>
+      <button onclick="sair()">Sair</button>
+    </div>
+  </header>
+
+  <!-- Slideshow -->
+  <section class="secao">
+    <h2>Modos em destaque</h2>
+
+    <div class="slideshow">
+      <div class="slide ativo" style="background: #4a1a7a;">
+        <p class="slide-modo">Modo Alegria </p>
+        <p class="slide-legenda">"Esse sorriso não tem preço "</p>
+      </div>
+      <div class="slide" style="background: #0a3a6a;">
+        <p class="slide-modo">Modo Calma </p>
+        <p class="slide-legenda">"Respira. Esse momento é seu. "</p>
+      </div>
+      <div class="slide" style="background: #6a1a1a;">
+        <p class="slide-modo">Modo Intensidade </p>
+        <p class="slide-legenda">"Você foi além do que imaginou. "</p>
+      </div>
+      <div class="slide" style="background: #1a5a1a;">
+        <p class="slide-modo">Modo Natureza </p>
+        <p class="slide-legenda">"Conexão com o que realmente importa."</p>
+      </div>
+      <div class="slide" style="background: #4a3000;">
+        <p class="slide-modo">Modo Nostalgia </p>
+        <p class="slide-legenda">"Alguns momentos merecem ser eternos."</p>
+      </div>
+    </div>
+
+    <div class="slide-botoes">
+      <button onclick="slideAnterior()">&#8592; Anterior</button>
+      <span id="slideContador">1 / 5</span>
+      <button onclick="slideProximo()">Próximo &#8594;</button>
+    </div>
+  </section>
+
+  <!-- Modos de câmera -->
+  <section class="secao">
+    <h2>Escolha um modo</h2>
+    <div class="modos-grid" id="modosGrid">
+      <!-- Os cards dos modos serão criados dinamicamente aqui -->
+    </div>
+  </section>
+
+  <!-- Área de interação -->
+  <section class="secao">
+    <h2>Simular captura</h2>
+    <p>Selecione um modo acima e clique em capturar:</p>
+    <button onclick="capturarFoto()">📷 Capturar foto</button>
+    <div id="resultado"></div>
+  </section>
+
+  <script src="js/auth.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/modos.js"></script>
+</body>
+</html>
