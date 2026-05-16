@@ -248,9 +248,12 @@ padding: 40px;
 /* RESULTADO */
 #resultado {
   margin-top: 20px;
-  background-color: #1e1e1e;
-  padding: 16px;
-  border-radius: 8px;
+  background:
+  rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 22px;
+  border-radius: 18px;
   display: none;
 }
 
